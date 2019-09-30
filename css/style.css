@@ -495,10 +495,11 @@ ul .catalog-menu {
 
 .catalog-list {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   flex-wrap: wrap;
-  align-items: flex-start;
   padding-left: 0;
-  margin: -4px 14px;
+  margin: 0;
 }
 
 .catalog-list .catalog-icecream {
