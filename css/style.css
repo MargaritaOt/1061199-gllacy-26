@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
@@ -191,6 +191,7 @@ a {
 
 .search-link svg {
   position: absolute;
+  top: 10px;
   left: 10px;
 }
 
@@ -441,6 +442,10 @@ ul .catalog-menu {
   padding: 9px 16px 9px 17px;
 }
 
+.search a {
+    padding: 18px;
+}
+
 .time-work {
   display: flex;
   flex-direction: column;
@@ -596,14 +601,16 @@ ul .catalog-menu {
 }
 
 .offers-card a {
+  margin: 45px 20px 22px auto;
+  padding: 9px 22px 12px;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  margin-left: auto;
-  margin-right: 23px;
-  margin-bottom: 22px;
-  margin-top: 45px;
-  padding: 11px 23px;
+}
+
+.offers-card.rb a {
+  margin: 45px 20px 23px auto;
+  padding: 10px 23px 12px;
 }
 
 .offers-card h3 {
@@ -625,7 +632,7 @@ ul .catalog-menu {
   justify-content: space-between;
   align-items: flex-end;
   flex-wrap: wrap;
-  margin: 41px 27px;
+  margin: 41px 27px 0;
   padding: 0;
   font-size: 16px;
   line-height: 22px;
@@ -633,6 +640,7 @@ ul .catalog-menu {
 }
 
 .catalog-icecream {
+  max-width: 267px;
   flex-basis: 25%;
   display: flex;
   flex-direction: column-reverse;
@@ -665,14 +673,14 @@ ul .catalog-menu {
 
 .catalog-icecream-price b::before {
   content: "";
-  background-image: url("../img/ruble.svg");
+  background-image: url("../img/price.png");
   background-repeat: no-repeat;
   position: absolute;
-  width: 31px;
-  height: 36px;
+  width: 77px;
+  height: 39px;
   right: 0;
   left: 80px;
-  top: 8px;
+  top: 3px;
 }
 
 .catalog-icecream-price span {
@@ -682,10 +690,10 @@ ul .catalog-menu {
   line-height: 28px;
 }
 
-.link-icecream {
+.icecream-description {
   display: flex;
   flex-direction: column-reverse;
-  margin: 0;
+  margin: 13px 6px 0 8px;
   padding: 0;
   text-align: center;
   font-size: 16px;
@@ -754,7 +762,7 @@ ul .catalog-menu {
   border-radius: 10px;
   background-position: top center;
   background-repeat: repeat;
-  margin: 0 27px 40px 27px;
+  margin: 38px 27px 38px;
 }
 
 .shop-title {
@@ -762,8 +770,8 @@ ul .catalog-menu {
   line-height: 30px;
   font-weight: 500;
   color: #323232;
-  padding: 25px 0 23px 19px;
-  margin: 35px 0 0 0;
+  padding: 25px 0 21px 20px;
+  margin: 0;
 }
 
 .shop-features {
@@ -777,28 +785,29 @@ ul .catalog-menu {
   color: #323232;
   list-style: none;
   margin: 0;
-  padding-bottom: 2px;
+  padding-right: 23px;
 }
 
 .shop-feature {
-  max-width: 470px;
+  max-width: 480px;
   position: relative;
+  margin: 0 0 25px 10px;
   padding-left: 25px;
-  margin: 0 35px 23px 10px;
 }
 
 .shop-feature svg {
   position: absolute;
   left: -30px;
-  top: -14px;
+  top: -13px;
 }
 
 .news {
+  min-width: 560px;
   display: flex;
   flex-direction: column;
   flex-basis: 49%;
-  min-height: 210px;
-  margin-right: 25px;
+  min-height: 211px;
+  margin-right: 27px;
   background-color: #ffffff;
   background-image: url("../img/strawberry.png");
   background-position: top center;
@@ -808,7 +817,7 @@ ul .catalog-menu {
 }
 
 .news-blog {
-  margin: 22px 0 6px 20px;
+  margin: 23px 0 6px 20px;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -828,7 +837,7 @@ ul .catalog-menu {
   flex-basis: 49%;
   min-height: 210px;
   background: no-repeat #f8f7f4;
-  border: 5px solid;
+  border: 4px solid;
   border-image-source: url("../img/candy-border.png");
   border-image-slice: 10;
   background-size: contain;
@@ -843,28 +852,25 @@ ul .catalog-menu {
 }
 
 .email {
+  margin: 30px 20px 0 23px;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
   color: #5a5a5a;
-  margin: 30px 20px 0 20px;
 }
 
 .dispatch button {
+  margin: 38px 22px 34px auto;
+  padding: 10px 18px;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  margin-left: auto;
-  margin-right: 22px;
-  margin-top: 35px;
-  margin-bottom: 35px;
-  padding: 9px 18px;
 }
 
 .contacts {
   position: relative;
   display: flex;
-  margin: 39px 0 130px 0;
+  margin: 39px 0 80px 0;
   padding: 0;
   font-size: 14px;
   line-height: 20px;
@@ -903,24 +909,24 @@ ul .catalog-menu {
 }
 
 .direction {
-  width: 304px;
+  width: 300px;
   display: inline-block;
-  margin: 20px 20px 0 auto;
+  margin: 62px 26px 0 auto;
   color: #323232;
   background-color: #f8f7f4;
   border: 1px solid #cccccc;
   border-radius: 15px;
 }
 
-.add {
+.add-description {
+  margin: 28px 125px 2px 24px;
   font-size: 14px;
   line-height: 20px;
   font-weight: normal;
-  margin: 26px 125px 2px 25px;
 }
 
-.edd span {
-  margin: 0 55px 0 25px;
+.add {
+  margin: 0 55px 0 23px;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -937,19 +943,19 @@ ul .catalog-menu {
 }
 
 .direction .button {
+  margin: 12px 23px 30px;
+  padding: 10px 28px;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  margin: 10px 25px 30px;
-  padding: 10px 28px;
 }
 
 .direction .link {
+  margin-top: 5px;
   color: #323232;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  margin-top: 5px;
 }
 
 .modal-direction {
@@ -1049,19 +1055,19 @@ ul .catalog-menu {
 }
 
 .footer-social {
-  width: 186px;
+  min-width: 186px;
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0;
   margin-top: 20px;
-  margin-left: 5px;
+  margin-left: 27px;
 }
 
 .social-button {
-  width: 32px;
-  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
   border: 2px solid rgb(255, 255, 255, 0.5);
   border-radius: 50%;
   display: flex;
@@ -1073,22 +1079,22 @@ ul .catalog-menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 186px;
   list-style: none;
   margin: 0 auto;
   padding: 0;
 }
 
 .extra-info {
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: bold;
-  width: 335px;
+  min-width: 335px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: 11px;
-  margin-left: 34px;
+  margin-left: auto;
+  padding-left: 38px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: bold;
 }
 
 .extra-info li {
@@ -1113,7 +1119,7 @@ ul .catalog-menu {
 .footer-copyright {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 23px 0 auto;
 }
 
 .footer-copyright a {

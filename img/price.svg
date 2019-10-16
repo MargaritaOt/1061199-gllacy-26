@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77" height="39" viewBox="0 0 77 39">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 45px;
+        filter: url(#filter);
+        fill: #fff;
+        font-family: Roboto;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-size: 30px;
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="77" height="39" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="1.732"/>
+      <feFlood result="flood" flood-color="#313235" flood-opacity="0.5"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <text id="_кг_copy_13" data-name="₽/кг copy 13" class="cls-1" y="33">₽<tspan class="cls-2">/кг</tspan></text>
+</svg>
