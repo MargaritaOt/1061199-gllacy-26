@@ -44,19 +44,41 @@
     <nav class="user-navigation">
       <ul class="user-list">
         <li class="search">
-          <a class="search-link" href="search.html"><span class="visually-hidden">Поиск</span></a>
+          <a class="search-link" href="search.html"><span class="visually-hidden">Поиск</span><svg height="17" viewbox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"></path></svg></a>
+          <form action="/echo" class="search-form" method="post">
+            <label class="visually-hidden" for="search">Поиск</label>
+            <input class="input" id="search" name="search" placeholder="Что ищем?" type="search">
+            <button class="button visually-hidden modal-close" type="submit">Найти</button>
+          </form>
         </li>
         <li class="login">
-          <a class="login-link" href="login.html"><span>Вход</span></a>
+          <a class="login-link" href="login.html"><svg height="19" viewbox="0 0 21 19" width="21" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"></path>
+            <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"></path>
+          </g></svg><span>Вход</span></a>
+          <section class="modal-login">
+            <h1 class="visually-hidden">Личный кабинет</h1>
+            <p class="visually-hidden">Введите свой логин и пароль</p>
+            <form action="https://echo.htmlacademy.ru" class="login-form" method="post">
+              <p><label class="visually-hidden" for="user-login">Логин</label> <input class="input" id="user-login" name="login" placeholder="Электронная почта" type="text"></p>
+              <p><label class="visually-hidden" for="user-password">Пароль</label> <input class="input" id="user-password" name="password" placeholder="Пароль" type="password"></p>
+              <div class="login-wrapper">
+                <p class="login-help"><a class="link" href="#">Забыли пароль?</a> <a class="link" href="#">Новая регистрация</a></p><button class="button" type="submit">Войти</button>
+              </div>
+            </form>
+          </section>
         </li>
         <li class="basket">
           <a class="basket-link" href="basket.html"><span>Пусто</span></a>
         </li>
       </ul>
+    </nav>
+      <div class="page-wrapper">
       <section class="time-work">
         <p class="time">С 10 до 20, ежедневно</p><a class="link-tel" href="tel:8-812-450-25-25">8 812 450-25-25</a>
       </section>
-    </nav>
         <div class="breadcrumbs-wrapper">
           <h1 class="page-title">Сливочное мороженое</h1>
           <ul class="breadcrumbs">
