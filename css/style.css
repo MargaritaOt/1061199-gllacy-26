@@ -70,6 +70,16 @@ a {
 .input {
   max-height: 43px;
   flex-grow: 1;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.input-answer {
+  max-height: 43px;
+  flex-grow: 1;
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
@@ -80,8 +90,8 @@ a {
 .search-form input[type="search"] {
   width: 311px;
   max-height: 44px;
-  margin: 20px 15px;
-  padding: 16px 95px 20px 16px;
+  margin: 19px 15px;
+  padding: 20px 95px 20px 13px;
   color: #999999;
   box-sizing: border-box;
   border: 1px solid #cccccc;
@@ -91,9 +101,19 @@ a {
   font-weight: 400;
 }
 
-.modal-login input[type="text"], .modal-login input[type="password"], .feedback input[type="text"] {
-  margin: 5px 20px;
-  padding: 20px;
+.modal-login input[type="text"],
+.modal-login input[type="password"] {
+  margin: 5px 19px 3px;
+  padding: 19px 64px 19px 13px;
+  color: #999999;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.feedback input[type="text"] {
+  margin: 5px 1px 3px;
+  padding: 19px 69px 19px 13px;
   color: #999999;
   box-sizing: border-box;
   border: 1px solid #cccccc;
@@ -119,8 +139,8 @@ a {
 }
 
 .feedback input[type="email"] {
-  margin: 10px 11px 10px 20px;
-  padding: 20px;
+  margin: 5px 0 10px 1px;
+  padding: 20px 70px 20px 13px;
   color: #999999;
   box-sizing: border-box;
   border: 1px solid #cccccc;
@@ -135,7 +155,8 @@ a {
   z-index: 2;
   display: flex;
   width: 342px;
-  margin-left: -310px;
+  margin-top: 3px;
+  margin-left: -307px;
   padding: 0;
   background-color: #f8f7f4;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
@@ -164,6 +185,7 @@ a {
   width: 278px;
   position: fixed;
   z-index: 1;
+  margin-top: 5px;
   margin-left: -185px;
   background-color: #f8f7f4;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
@@ -209,8 +231,8 @@ a {
 }
 
 .login-wrapper button {
-  margin-top: 10px;
-  padding: 9px 26px;
+  margin-top: 3px;
+  padding: 10px 25px;
   border-radius: 20px;
   font-size: 18px;
   line-height: 24px;
@@ -218,17 +240,16 @@ a {
 }
 
 .login-help {
-  margin: 0 0 10px 16px;
+  margin: 0 0 10px 12px;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
 }
 
 .login-help .link {
-  padding: 1px;
+  padding: 0 0 0 6px;
   color: #676766;
-  text-decoration: none;
-  border-bottom: 1px dashed #676766;
+  text-decoration: underline;
 }
 
 .login, .basket {
@@ -415,21 +436,22 @@ ul .catalog-menu {
 .site-list .catalog-menu {
   position: absolute;
   z-index: 6;
-  width: 145px;
+  min-width: 145px;
   left: -10px;
-  top: 35px;
+  top: 40px;
   margin: 0;
-  padding: 10px 0;
+  padding: 0 0 10px 0;
   visibility: hidden;
   list-style: none;
   border-radius: 5px;
   background-color: #f8f7f4;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
 
 .site-list .catalog-menu a {
   margin: 0;
-  padding: 13px 20px 13px 22px;
+  padding: 10px 21px 5px;
   color: #323232;
   font-size: 14px;
   line-height: 16px;
@@ -437,13 +459,15 @@ ul .catalog-menu {
 }
 
 .catalog-menu span {
+  display: block;
+  margin-bottom: 5px;
   font-weight: bold;
 }
 
 .catalog-menu span::before {
   content: "";
   position: absolute;
-  top: 45px;
+  top: 37px;
   left: 9px;
   width: 128px;
   height: 1px;
@@ -716,7 +740,7 @@ ul .catalog-menu {
 
 .offers-card.rb a {
   margin: 45px 20px 23px auto;
-  padding: 10px 23px 12px;
+  padding: 10px 25px 12px;
 }
 
 .offers-card h3 {
@@ -738,7 +762,7 @@ ul .catalog-menu {
   justify-content: space-between;
   align-items: flex-end;
   flex-wrap: wrap;
-  margin: 41px 14px 0;
+  margin: 34px 14px 0;
   padding: 0;
   font-size: 16px;
   line-height: 22px;
@@ -751,7 +775,7 @@ ul .catalog-menu {
   flex-basis: 25%;
   display: flex;
   flex-direction: column-reverse;
-  padding: 0 13px;
+  padding: 6px 13px 0;
 }
 
 .catalog-hit::before {
@@ -761,16 +785,15 @@ ul .catalog-menu {
   position: absolute;
   width: 61px;
   height: 61px;
-  right: 0;
-  left: 0;
-  top: 0;
+  left: 13px;
+  top: 5px;
   z-index: 1;
 }
 
 .catalog-icecream-price {
   position: absolute;
-  left: 0;
-  top: 210px;
+  left: 10px;
+  top: 213px;
   margin: 0;
   padding: 0;
   font-size: 45px;
@@ -826,7 +849,7 @@ ul .catalog-menu {
 .catalog-list {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin: 0;
   padding-left: 0;
@@ -864,7 +887,7 @@ ul .catalog-menu {
 }
 
 .shop {
-  margin: 38px 27px 38px;
+  margin: 38px 27px 40px;
   background-color: #e8dbbc;
   background-image: url("../img/wafer.png");
   border-radius: 10px;
@@ -904,7 +927,7 @@ ul .catalog-menu {
 
 .shop-feature svg {
   position: absolute;
-  left: -30px;
+  left: -32px;
   top: -13px;
 }
 
@@ -967,8 +990,8 @@ ul .catalog-menu {
 }
 
 .dispatch button {
-  margin: 38px 22px 34px auto;
-  padding: 10px 18px;
+  margin: 36px 22px 36px auto;
+  padding: 4px 18px;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -1069,8 +1092,9 @@ ul .catalog-menu {
   position: fixed;
   z-index: 7;
   left: 50%;
-  top: 67%;
+  top: 69%;
   width: 480px;
+  min-height: 443px;
   background-color: #f8f7f4;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   border: 1px solid #cccccc;
@@ -1085,7 +1109,7 @@ ul .catalog-menu {
 
 .feedback p {
   margin: 0;
-  padding: 0;
+  padding: 14px 26px 0;
 }
 
 .answer {
@@ -1102,8 +1126,9 @@ ul .catalog-menu {
 
 #comment-field {
   width: 435px;
-  margin: 6px 0 0 20px;
-  padding: 15px;
+  min-height: 154px;
+  margin: 0;
+  padding: 5px 13px;
   color: #999999;
   box-sizing: border-box;
   border: 1px solid #cccccc;
@@ -1114,7 +1139,10 @@ ul .catalog-menu {
 }
 
 .modal-direction .button {
-  margin: 10px 20px 0 auto;
+  margin: 17px 23px 0 auto;
+  padding: 10px 23px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .modal-close, .form-close {
