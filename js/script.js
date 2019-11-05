@@ -14,7 +14,7 @@ try {
   isStorageSupport = false;
 }
 
-form.addEventListener('click', function (evt) {
+form.addEventListener('click', function(evt) {
   evt.preventDefault();
   popup.classList.add('modal-show');
   if (storage) {
@@ -23,13 +23,13 @@ form.addEventListener('click', function (evt) {
   nameUser.focus();
 });
 
-close.addEventListener('click', function (evt) {
+close.addEventListener('click', function(evt) {
   evt.preventDefault();
   popup.classList.remove('modal-show');
   popup.classList.remove("modal-error");
 });
 
-formForAnswer.addEventListener('click', function (evt) {
+formForAnswer.addEventListener('click', function(evt) {
   if (!nameUser.value || !emailUser.value) {
     evt.preventDefault();
     popup.classList.add("modal-error");
@@ -40,7 +40,7 @@ formForAnswer.addEventListener('click', function (evt) {
   }
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
     if (popup.classList.contains("modal-show")) {
