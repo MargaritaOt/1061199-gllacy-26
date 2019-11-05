@@ -239,6 +239,8 @@ a {
 }
 
 .login-help {
+  display: flex;
+  flex-direction: column;
   margin: 0 0 10px 12px;
   font-size: 13px;
   line-height: 24px;
@@ -1330,12 +1332,14 @@ ul .catalog-menu {
 .breadcrumbs-current::before {
   content: "≫";
   position: absolute;
+  top: 0;
   right: 4px;
 }
 
 .breadcrumbs-current::after {
   content: "≫";
   position: absolute;
+  top: 0;
   left: 7px;
 }
 
@@ -1675,5 +1679,114 @@ ul .catalog-menu {
 
   20%, 40% {
     transform: rotate(10deg);
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .offers-card.rb a {
+    margin-left: 370px;
+  }
+
+  .offers-card a {
+    margin-left: 345px;
+  }
+
+  .modal-direction .button {
+    margin: 17px 23px 0 320px;
+  }
+
+  .feedback input[type='text'] {
+    padding: 12px 69px 19px 13px;
+  }
+
+  .feedback input[type='email'] {
+    padding: 12px 70px 20px 13px;
+  }
+
+  .search-form input[type='search'] {
+    padding: 12px 95px 20px 13px;
+  }
+
+  .modal-login input[type='text'], .modal-login input[type='password'] {
+    padding: 12px 64px 19px 13px;
+  }
+
+  .search-form {
+    width: 370px;
+  }
+
+  .modal-login {
+    width: 320px;
+  }
+
+  .filter-sorting select {
+    border: none;
+  }
+
+  .modal-basket .button {
+    margin: 0 13px 21px 350px;
+  }
+
+  .total-price {
+    margin-left: 402px;
+  }
+
+  .basket table {
+    margin-left: 40px;
+  }
+
+  .col-name {
+    width: 230px;
+  }
+
+  .action {
+    margin-top: 0;
+    background-image: url("../img/shape.png");
+    background-size: cover;
+  }
+
+  .catalog-icecream:hover {
+    padding: 7px 13px 0 13px;
+    background-image: url("../img/shape.png");
+    background-size: cover;
+  }
+
+  .social-button {
+    min-width: 33px;
+    min-height: 33px;
+    border: 2px solid #ffffff;
+  }
+}
+
+@-moz-document url-prefix() {
+  .action {
+    bottom: -74px;
+  }
+}
+
+@supports (-ms-ime-align:auto) {
+  .filter-sorting select {
+    border: none;
+  }
+
+  .action {
+    bottom: -74px;
+    background-image: url("../img/shape.png");
+    background-size: cover;
+  }
+
+  .catalog-icecream:hover {
+    background-image: url("../img/shape.png");
+    background-size: cover;
+  }
+
+  .modal-login {
+    width: 300px;
+  }
+
+  .social-button {
+    min-width: 33px;
+    min-height: 33px;
+    border: 2px solid #ffffff;
   }
 }
