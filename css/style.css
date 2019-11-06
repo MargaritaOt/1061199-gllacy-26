@@ -1860,7 +1860,12 @@ ul .catalog-menu {
     width: 300px;
   }
 
+  .filter-sorting {
+    padding-left: 13px;
+  }
+
   .filter-sorting select {
-    padding: 0 0 2px 18px;
+    direction: inherit;
+    -webkit-apperence: none;
   }
 }
