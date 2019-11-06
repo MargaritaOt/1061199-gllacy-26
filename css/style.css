@@ -1855,7 +1855,7 @@ ul .catalog-menu {
   }
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   .modal-login {
     width: 300px;
   }
