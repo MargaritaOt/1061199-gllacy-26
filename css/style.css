@@ -1493,7 +1493,7 @@ ul .catalog-menu {
 }
 
 .filter-sorting {
-  width: 193px;
+  width: 181px;
   background-color: #abbcb2;
   border-radius: 20px;
   overflow: hidden;
@@ -1519,7 +1519,7 @@ ul .catalog-menu {
 .filter-sorting svg {
   position: absolute;
   right: 13px;
-  top: 40px;
+  top: 38px;
   margin: auto;
   fill: currentColor;
   pointer-events: none;
