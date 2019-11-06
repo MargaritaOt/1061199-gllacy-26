@@ -1029,7 +1029,7 @@ ul .catalog-menu {
 }
 
 .email {
-  margin: 31px 22px 0 22px;
+  margin: 31px 20px 0 22px;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -1502,7 +1502,7 @@ ul .catalog-menu {
 .filter-sorting select {
   width: 220px;
   height: 36px;
-  padding: 0 0 2px 13px;
+  padding: 0 0 2px 20px;
   background-color: #abbcb2;
   border-radius: 20px;
   color: #ffffff;
