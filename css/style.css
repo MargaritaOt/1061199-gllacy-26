@@ -733,7 +733,7 @@ ul .catalog-menu {
   background-image: url("../img/slider-item3.png");
 }
 
-.slider-controls:hover label {
+.slider-controls label:hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -1682,7 +1682,6 @@ ul .catalog-menu {
 }
 
 .price-input {
-  cursor: pointer;
   border: none;
   background-color: #849d8f;
   color: #ffffff;
@@ -1703,12 +1702,14 @@ ul .catalog-menu {
   position: absolute;
   left: 39px;
   top: 35px;
+  cursor: pointer;
 }
 
 .range-before svg {
   position: absolute;
   left: 136px;
   top: 35px;
+  cursor: pointer;
 }
 
 .filter-price::before {
